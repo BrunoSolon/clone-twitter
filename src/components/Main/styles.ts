@@ -1,50 +1,50 @@
-import styled from 'styled-components';
-import { ArrowLeft } from '../../styles/Icons';
+import styled from "styled-components";
+import { ArrowLeft } from "../../styles/Icons";
 
 export const Container = styled.div`
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
 
-	width: min(601px, 100%);
+  width: min(601px, 100%);
 
-	@media (min-width: 500px) {
-		border-left: 1px solid var(--outline);
-		border-right: 1px solid var(--outline);
-	}
+  @media (min-width: 500px) {
+    border-left: 1px solid var(--outline);
+    border-right: 1px solid var(--outline);
+  }
 `;
 
 export const Header = styled.div`
-	z-index: 2;
-	position: sticky;
-	top: 0;
-	background: var(--primary);
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  background: var(--primary);
 
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	text-align: left;
-	
-	padding: 8px 0 9px 13px;
-	border-bottom: 1px solid var(--outline);
+  text-align: left;
 
-	> button {
-		padding: 8px;
-		border-radius: 50%;
+  padding: 8px 0 9px 13px;
+  border-bottom: 1px solid var(--outline);
 
-		outline: 0;
-		cursor: pointer;
+  > button {
+    padding: 8px;
+    border-radius: 50%;
 
-		&:hover {
-			background: var(--twitter-dark-hover);
-		}
-	}
+    outline: 0;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--twitter-dark-hover);
+    }
+  }
 `;
 
 export const BackIcon = styled(ArrowLeft)`
-	width: 24px;
-	height: 24px;
+  width: 24px;
+  height: 24px;
 
-	fill: var(--twitter);
+  fill: var(--twitter);
 `;
 
-export const ProfileInfo  = styled.div``;
+export const ProfileInfo = styled.div``;
